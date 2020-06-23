@@ -34,6 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editValor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Digite o valor da conta Ex: 36.50"
@@ -64,10 +65,10 @@
         android:text="Gorjeta"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textPorcentagem" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textPorcentagem"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -80,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textGorjeta"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -94,10 +95,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textPorcentagem" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textTotal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -114,7 +115,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/seekBarGorjeta"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -122,8 +123,9 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:max="100"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textPorcentagem"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
